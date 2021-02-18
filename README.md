@@ -50,3 +50,11 @@
  - [ ] Patents
     - Korea(Domestic)
     - United States
+
+### Section 7
+
+ - [ ] Gallery
+
+### Section 8
+
+ - [ ] Contact
