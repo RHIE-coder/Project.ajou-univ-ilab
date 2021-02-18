@@ -1,4 +1,4 @@
-# Ajou University - Internet Lab
+# Ajou University - Internet & Security Lab
 
 ## A. Plan of Organization
 
@@ -58,3 +58,16 @@
 ### Section 8
 
  - [ ] Contact
+
+
+## B. Proto Source
+
+### Color
+
+ - [Black Line](https://color.adobe.com/ko/search?q=%EB%B8%94%EB%9E%99)
+
+<hr>
+
+#### [Old Site](http://security.ajou.ac.kr/security/research/research01.jsp)
+
+#### [Origin Site](http://ict.ajou.ac.kr/ict2/rnd/rnd.jsp)
