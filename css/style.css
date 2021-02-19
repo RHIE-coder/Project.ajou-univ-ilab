@@ -1,8 +1,28 @@
 * {
     box-sizing: border-box;
-    background-color: cadetblue;
 }
 
-.header {
+body{
+    background-image: url("../images/test/laptop2.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.navbar img{
+    float: left;
+    width: 3vw;
+}
+
+.navbar a{
+    float:right;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-color: transparent;
+    color:black
     
 }
