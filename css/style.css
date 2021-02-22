@@ -2,27 +2,45 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("../images/test/laptop2.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    position: fixed;
+.navbar{
+    background-color: #0C404A;
+    width : 100%;
 }
 
-.navbar img{
-    float: left;
-    width: 3vw;
+.navbar .logo{
+    width : 60px;
+    height : 45px;
 }
 
-.navbar a{
-    float:right;
-    text-align: center;
+.navbar .navbar-menu{
+    float : right;
+    margin : 0px;
+    padding : 0px;
+}
+
+.navbar .navbar-menu a{
     text-decoration: none;
-    display: block;
-    padding: 10px;
-    margin: 10px;
-    border-color: transparent;
-    color:black
-    
+    color : #02C9E3;
+    padding : 30px;
+    text-align: center;
+}
+
+.home{
+
+}
+
+.home .welcome-text{
+
+}
+
+.home .summary{
+
+}
+
+.home .current-research{
+
+}
+
+.home .location{
+
 }
