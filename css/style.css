@@ -9,6 +9,11 @@
     color:#000;
 }
 
+/******************************************/
+/*                                        */
+/*            navigation bar              */
+/*                                        */
+/******************************************/
 .navbar{
     display: flex;
     flex-direction: row;
@@ -30,7 +35,6 @@
 
 }
 
-
 .navbar .navbar-menu{
     margin-left: 15vw;
 }
@@ -48,9 +52,58 @@
 
 .navbar .navbar-menu a:hover{
     color: red;
-    font-weight: 900;
 }
 
+
+/* sticky-menu (start) */
+.navbar-sticky{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width:100%;
+    height: 60px;
+    z-index: 999;
+}
+
+.navbar-sticky .logo{
+    background-image:url("../images/test/black-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:50px;
+    height: 50px;
+
+}
+
+.navbar-sticky .navbar-menu{
+    margin-left: 15vw;
+}
+
+.navbar-sticky .navbar-menu li{
+    display : inline-block;
+    padding: 10px;
+}
+
+.navbar-sticky .navbar-menu a{
+    color: black;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.navbar-sticky .navbar-menu a:hover{
+    color: crimson;
+    font-size: 1rem;
+}
+/* sticky-menu (end) */
+
+
+/******************************************/
+/*                                        */
+/*                  home                  */
+/*                                        */
+/******************************************/
 .home{
     background-color: black;
 }

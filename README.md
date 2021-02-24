@@ -4,6 +4,16 @@
 
 ### Section 1
 
+ - [ ] Navigation bar
+    - Home
+    - Professor
+    - Members
+    - Projects
+    - Publications
+    - Patents
+    - Gallery
+    - Contact
+
  - [ ] About ilab
     - Summary
     - Current Research
