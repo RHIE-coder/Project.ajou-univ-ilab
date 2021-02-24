@@ -1,110 +1,21 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration:none;
+    border-collapse:collapse;
+    margin:0px;
+    padding:0px;
+    color:#000;
 }
 
-body {
-    margin:0px;
-    background-color: #03070D;
+.intro_bg{
+    background-image: url("../images/test/laptop2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar{
-    background-color: #0C404A;
-    height: 60px;
-}
-
-.navbar .inner-container{
-    display: flex;
-    align-items: stretch;
-}
-
-.navbar .logo{
-    width: 44px;
-    height: 32px;
-}
-
-.navbar .navbar-menu{
-    margin : 0px;
-    padding : 0px;
-}
-
-.navbar .navbar-menu a{
-    text-decoration: none;
-    color : #02C9E3;
-    padding : 30px;
-    text-align: center;
-}
-
-.navbar .navbar-menu a:hover{
-    background-color: #00706C;
-    text-decoration: none;
-    color : #03070D;
-    padding : 30px;
-    text-align: center;
     
-}
-
-.home{
-    position: relative;
-}
-
-.home .home-image{
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-}
-
-.home .welcome-text{
-    position: absolute;
-    top: 15%;
-    width: 100%;
-    text-align:center;
-    color:#03070D;
-    font-size: 3vw;
-    color : white
-}
-
-.home .inner-container{
-    position: absolute;
-    width: 100%;
-    height: 5vh;   
-    top: 35%;
-}
-
-.home .summary{
-    position: inherit;
-    width: 10%;
-    height: 100%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-size: 1vw
-    border-style: none;
-    border-radius: 1.5vw;
-    background-color: #3D242A;
-    color:#BDA8AD;
-}
-
-.home .current-research{
-    position: inherit;
-    width: 10%;
-    height: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1vw
-    border-style: none;
-    border-radius: 1.5vw;
-    background-color: #3D242A;
-    color:#BDA8AD;
-}
-
-.home .location{
-    position: inherit;
-    width: 10%;
-    height: 100%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    font-size: 1vw
-    border-style: none;
-    border-radius: 1.5vw;
-    background-color: #3D242A;
-    color:#BDA8AD;
 }
