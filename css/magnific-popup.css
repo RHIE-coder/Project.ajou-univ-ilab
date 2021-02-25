@@ -11,9 +11,9 @@
 .popup-img{
     position: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    height: 50%;
+    background-size: contain;
+    width: 85%;
+    height: 85%;
     z-index: 100;
 
     top:50%;

@@ -8,6 +8,7 @@ document.addEventListener('scroll', function () {
     }
 });
 
+
 function show_hidden_content(summ, cur_re, loc) {
 
     const intro_detail_space = document.getElementsByClassName("intro-detail-space")[0].style;
@@ -63,26 +64,40 @@ function show_hidden_content(summ, cur_re, loc) {
     source.className = "show-detail-button " + origin + " clicked-intro-btn";
 }
 
-function grant_popup_func(target, filename){
- 
-    const path = "../images/"+filename;
- 
-    const aiming = document.getElementsByClassName(target);
+document.getElementsByClassName('map')[0].addEventListener('click',function(event){
+    
+    const fade_effect = document.createElement('div');
+    const zoom_image = document.createElement('div');
+    fade_effect.className='magnific-popup';
+    zoom_image.className='popup-img';
+    zoom_image.setAttribute('onclick','return_to_main()');
+    zoom_image.style.backgroundImage=window.getComputedStyle(event.target).backgroundImage;
+    document.body.prepend(zoom_image);
+    document.body.prepend(fade_effect);
 
-    aiming[0].addEventListener("click",function(){
-        const fade_effect = document.createElement('div');
-        const zoom_image = document.createElement('div');
-        fade_effect.className='magnific-popup';
-        zoom_image.className='popup-img';
-        zoom_image.setAttribute('onclick','return_to_main()');
-        zoom_image.style.backgroundImage="url("+path+")";
-        document.body.prepend(zoom_image);
-        document.body.prepend(fade_effect);
-    });
-
-}
+});
 
 function return_to_main(){
     document.getElementsByClassName("magnific-popup")[0].remove();
     document.getElementsByClassName("popup-img")[0].remove();
 }
+
+document.getElementsByClassName('navbar-menu')[0].addEventListener('click', function(event){
+    if(window.getComputedStyle(event.target).backgroundImage){
+        document.getElementById("side-bar").style.display="block";
+    }
+});
+
+document.getElementById("exit").addEventListener('click',function(){
+    document.getElementById("side-bar").style.display="none";
+});
+
+window.addEventListener('resize',function(){
+    if(window.innerWidth >= 860){
+        document.getElementById("side-bar").style.display="none";
+    }
+});
+
+document.getElementsByClassName('side-menu')[0].addEventListener('click',function(){
+    document.getElementById("side-bar").style.display="none";
+})

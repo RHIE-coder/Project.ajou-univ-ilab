@@ -10,6 +10,10 @@
     color:#000;
 }
 
+.side-bar{
+    display: none;
+}
+
 /******************************************/
 /*                                        */
 /*            navigation bar              */
@@ -105,6 +109,86 @@
 }
 /* sticky-menu (end) */
 
+@media screen and (max-width: 860px){
+    .navbar{
+        justify-content: space-around;
+    }
+
+    .navbar .navbar-menu{
+        background-image: url("../images/white-menu.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:50px;
+        height: 50px;
+    }
+
+    .navbar .navbar-menu li{
+        display : none;
+    }
+
+    /* side-menu (start) */
+    .side-bar{
+        display: none;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        position: fixed;
+    }
+
+    .side-bar .side-bg{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+        opacity: 0.97;
+    }
+
+    .side-bar .exit{
+        position: absolute;
+        background-image: url("../images/exit.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        left:80%;
+        top:5%;
+        width:50px;
+        height: 50px;
+    }
+
+    .side-bar .side-menu{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        width: 70vw;
+        height: 80vh;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-size: large;
+        font-weight: 900;
+    }
+
+    .side-bar .side-menu li{
+        padding : 3vh;
+    }
+    /* side-menu (end) */
+
+    /* sticky-menu (start) */
+    .navbar-sticky{
+        justify-content: space-around;
+    }
+
+    .navbar-sticky .navbar-menu{
+        background-image: url("../images/black-menu.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:50px;
+        height: 50px;
+    }
+
+    .navbar-sticky .navbar-menu li{
+        display : none;
+    }
+    /* sticky-menu (end) */
+}
 
 /******************************************/
 /*                                        */
@@ -245,9 +329,16 @@
     color:rgb(33, 24, 24);
     font-size: large;
     font-weight: bold;
-    border-radius: 90rem;
+    border-radius: 270rem;
     background-color: darkgrey;
     margin-top:10vh;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.home .current-research-detail .tech-list-intro > div:hover{
+    background-color: rgb(208, 60, 60);
 }
 
 .home .location-detail{
@@ -266,3 +357,56 @@
 .home .location-detail p{
     color:white
 }
+
+@media screen and (max-width: 860px){
+    .home .welcome-text{
+        color:aliceblue;
+        margin: 15vh 0;
+        font-size: 4vw;
+    }
+
+    .home .intro-btn{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home .intro-btn .show-detail-button{
+        margin-top: 5px;
+    }
+
+    .home .event-content{
+        overflow: auto;
+        
+    }
+
+    .home .event-content::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+
+    .home .summary-detail{
+        line-height: 1.5;
+    }
+
+    .home .current-research-detail .tech-list-intro{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .home .current-research-detail .tech-list-intro > div{
+        font-size: xx-small;
+        width: 10vw;
+        height: 10vh;
+        line-height: 10vh;
+        margin:0;
+    }
+}
+
+
+/******************************************/
+/*                                        */
+/*               professor                */
+/*                                        */
+/******************************************/
