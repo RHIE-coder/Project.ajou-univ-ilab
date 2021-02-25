@@ -1,0 +1,24 @@
+.magnific-popup{
+    float:left;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.popup-img{
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    z-index: 100;
+
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+

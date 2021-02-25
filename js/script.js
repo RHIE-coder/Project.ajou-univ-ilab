@@ -62,3 +62,27 @@ function show_hidden_content(summ, cur_re, loc) {
     show_target.display = "block";
     source.className = "show-detail-button " + origin + " clicked-intro-btn";
 }
+
+function grant_popup_func(target, filename){
+ 
+    const path = "../images/"+filename;
+ 
+    const aiming = document.getElementsByClassName(target);
+
+    aiming[0].addEventListener("click",function(){
+        const fade_effect = document.createElement('div');
+        const zoom_image = document.createElement('div');
+        fade_effect.className='magnific-popup';
+        zoom_image.className='popup-img';
+        zoom_image.setAttribute('onclick','return_to_main()');
+        zoom_image.style.backgroundImage="url("+path+")";
+        document.body.prepend(zoom_image);
+        document.body.prepend(fade_effect);
+    });
+
+}
+
+function return_to_main(){
+    document.getElementsByClassName("magnific-popup")[0].remove();
+    document.getElementsByClassName("popup-img")[0].remove();
+}

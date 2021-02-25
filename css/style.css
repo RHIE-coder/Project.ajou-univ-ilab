@@ -31,7 +31,7 @@
 }
 
 .navbar .logo{
-    background-image:url("../images/test/white-logo.png");
+    background-image:url("../images/white-logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     width:50px;
@@ -76,7 +76,7 @@
 }
 
 .navbar-sticky .logo{
-    background-image:url("../images/test/black-logo.png");
+    background-image:url("../images/black-logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     width:50px;
@@ -116,7 +116,7 @@
 }
 
 .home .intro-bg{
-    background-image: url("../images/test/laptop2.jpg");
+    background-image: url("../images/laptop2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,21 +138,13 @@
 .home .welcome-text{
     color:aliceblue;
     margin: 15vh 0;
-    font-size: 4vh;
+    font-size: 2vw;
 }
 
 .home .welcome-text::after{
     content: "Welcome to iLab";
     animation-name: textanim;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function: linear;
-}
-
-.home .welcome-text::after{
-    animation-name: textanim;
-    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
@@ -238,18 +230,39 @@
 }
 
 .home .current-research-detail .tech-list-intro{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
 .home .current-research-detail .tech-list-intro > div{
-    display:block;
-    float: left;
-    padding:30px;
-    
-    /* test-show */background-color: darkgreen;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    color:rgb(33, 24, 24);
+    font-size: large;
+    font-weight: bold;
+    border-radius: 90rem;
+    background-color: darkgrey;
+    margin-top:10vh;
 }
 
 .home .location-detail{
     display:none;
-    
+}
+
+.home .location-detail .map{
+    display:inline-block;
+    background-image: url("../images/ajou-map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.home .location-detail p{
+    color:white
 }
