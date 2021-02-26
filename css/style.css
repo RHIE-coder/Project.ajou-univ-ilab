@@ -10,10 +10,6 @@
     color:#000;
 }
 
-.side-bar{
-    display: none;
-}
-
 /******************************************/
 /*                                        */
 /*            navigation bar              */
@@ -44,15 +40,13 @@
 }
 
 .navbar .navbar-menu{
+    color: white;
     margin-left: 15vw;
 }
 
-.navbar .navbar-menu li{
+.navbar .navbar-menu a{
     display : inline-block;
     padding: 10px;
-}
-
-.navbar .navbar-menu a{
     color: white;
     font-weight: 900;
     font-size: 0.8rem;
@@ -92,12 +86,9 @@
     margin-left: 15vw;
 }
 
-.navbar-sticky .navbar-menu li{
+.navbar-sticky .navbar-menu a{
     display : inline-block;
     padding: 10px;
-}
-
-.navbar-sticky .navbar-menu a{
     color: black;
     font-weight: 900;
     font-size: 0.8rem;
@@ -132,7 +123,7 @@
         position: relative;
         width: 100vw;
         height: 100vh;
-        z-index: 999;
+        z-index: 99;
         position: fixed;
     }
 

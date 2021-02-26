@@ -184,7 +184,6 @@ object-fit나 object-position으로 움직이는 이미지 효과 넣어보기
 //CSS
 
 }
-// ##출처: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
 ```
 
 ## E. 브라우저

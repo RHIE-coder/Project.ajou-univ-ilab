@@ -3,22 +3,23 @@
     height: 100vh;
     width: 100vw;
     position: fixed;
-    z-index: 99;
+    z-index: 111;
     background-color: black;
     opacity: 0.8;
 }
 
 .popup-img{
+    background-image:url("../images/ajou-map.png");
+    background-color: red;
     position: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 85%;
-    height: 85%;
-    z-index: 100;
-
+    background-size: cover;
+    object-fit: fill;
+    width: 50vw;
+    height: 50vh;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    text-align: center;
+    z-index: 111;
 }
 
